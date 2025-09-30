@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Somme de deux nombres</title>
+</head>
+<body>
+  <h2>Somme de deux nombres</h2>
+  <input id="num1" type="number" placeholder="Entrez le premier nombre">
+  <input id="num2" type="number" placeholder="Entrez le deuxième nombre">
+  <button onclick="calculer()">Calculer</button>
+  <p id="resultat"></p>
+
+  <script>
+    function calculer() {
+      let a = parseInt(document.getElementById("num1").value);
+      let b = parseInt(document.getElementById("num2").value);
+      let c = a + b;
+      document.getElementById("resultat").innerText = "La somme est: " + c;
+    }
+  </script>
+</body>
+</html>
